@@ -681,8 +681,16 @@ def chart_efficient_frontier(
         xaxis_title="Annualised Volatility (%)",
         yaxis_title="Annualised Return (%)",
         showlegend=True,
-        legend=dict(x=0.01, y=0.99, bgcolor="rgba(0,0,0,0)"),
     )
+
+    fig.update_layout(
+        legend=dict(
+            x=0.01,
+            y=0.99,
+            bgcolor="rgba(0,0,0,0)"
+        )
+    )
+
     return fig
 
 
