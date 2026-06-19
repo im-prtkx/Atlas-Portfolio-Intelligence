@@ -584,9 +584,10 @@ def chart_correlation_heatmap(prices: pd.DataFrame) -> go.Figure:
         colorbar=dict(thickness=12, len=0.9, tickfont=dict(size=10)),
     ))
     fig.update_layout(
-        **_base_layout("Pairwise Correlation Matrix"),
-        xaxis=dict(side="bottom"),
+    **_base_layout("Pairwise Correlation Matrix")
     )
+
+    fig.update_xaxes(side="bottom")
     return fig
 
 
