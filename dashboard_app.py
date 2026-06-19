@@ -1390,7 +1390,7 @@ def chart_mc_paths(
         fig.add_trace(go.Scatter(
             x=dates, y=paths[i],
             mode="lines",
-            line=dict(color=f"{COBALT}55", width=0.6),
+            line=dict(color="rgba(37,99,235,0.35)", width=0.6),
             showlegend=False,
             hoverinfo="skip",
         ))
