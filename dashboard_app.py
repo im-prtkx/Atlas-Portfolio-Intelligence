@@ -1436,7 +1436,14 @@ def chart_mc_paths(
         **_base_layout(title),
         yaxis_tickprefix="$", yaxis_tickformat=",.0f",
         hovermode="x",
-        legend=dict(x=0.01, y=0.98),
+    )
+    fig.update_layout(
+        legend=dict(
+            x=0.01,
+            y=0.98,
+            bgcolor="rgba(0,0,0,0)",
+            borderwidth=0,
+        )
     )
     return fig
 
