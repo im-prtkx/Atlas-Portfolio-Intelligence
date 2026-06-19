@@ -506,7 +506,7 @@ def chart_drawdown(portfolio_returns: pd.Series) -> go.Figure:
     fig.add_trace(go.Scatter(
         x=dd.index, y=dd.values,
         fill="tozeroy",
-        fillcolor=f"{RED}28",
+        fillcolor="rgba(239,68,68,0.15)",
         line=dict(color=RED, width=1.5),
         name="Drawdown",
         hovertemplate="%{y:.2f}%<extra>Drawdown</extra>",
