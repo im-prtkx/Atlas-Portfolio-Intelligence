@@ -1524,7 +1524,14 @@ def chart_scenario_bars(scenario_df: pd.DataFrame) -> go.Figure:
         yaxis_ticksuffix="%",
         bargap=0.20,
         bargroupgap=0.08,
-        legend=dict(x=0.01, y=0.98),
+    )
+    fig.update_layout(
+        legend=dict(
+            x=0.01,
+            y=0.98,
+            bgcolor="rgba(0,0,0,0)",
+            borderwidth=0,
+        )
     )
     return fig
 
