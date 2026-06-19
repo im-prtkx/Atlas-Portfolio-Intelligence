@@ -2343,7 +2343,14 @@ def render_stress_testing() -> None:
         **_base_layout("Stressed Equity Curves ($)"),
         yaxis_tickprefix="$", yaxis_tickformat=",.0f",
         hovermode="x unified",
-        legend=dict(x=0.01, y=0.02),
+    )
+    fig_eq.update_layout(
+        legend=dict(
+            x=0.01,
+            y=0.02,
+            bgcolor="rgba(0,0,0,0)",
+            borderwidth=0,
+        )
     )
     st.plotly_chart(fig_eq, use_container_width=True,
                     config={"displayModeBar": False})
