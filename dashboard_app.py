@@ -554,7 +554,7 @@ def chart_rolling_volatility(portfolio_returns: pd.Series, window: int = 21) -> 
     fig = go.Figure(go.Scatter(
         x=roll_vol.index, y=roll_vol.values,
         line=dict(color=GOLD, width=1.8),
-        fill="tozeroy", fillcolor=f"{GOLD}20",
+        fill="tozeroy", fillcolor="rgba(245,158,11,0.12)",
         name=f"{window}d Rolling Vol",
         hovertemplate="%{y:.1f}%<extra></extra>",
     ))
