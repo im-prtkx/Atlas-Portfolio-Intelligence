@@ -1298,7 +1298,7 @@ def chart_bt_drawdown(equity: pd.Series, title: str = "Drawdown (%)") -> go.Figu
     fig  = go.Figure()
     fig.add_trace(go.Scatter(
         x=dd.index, y=dd.values,
-        fill="tozeroy", fillcolor=f"{RED}28",
+        fill="tozeroy", fillcolor="rgba(239,68,68,0.15)",
         line=dict(color=RED, width=1.5),
         name="Drawdown",
         hovertemplate="%{y:.2f}%<extra>Drawdown</extra>",
