@@ -1781,7 +1781,7 @@ def render_backtesting() -> None:
     fig_rsr = go.Figure(go.Scatter(
         x=roll_sr.index, y=roll_sr.values,
         line=dict(color=COBALT2, width=1.8),
-        fill="tozeroy", fillcolor=f"{COBALT}20",
+        fill="tozeroy", fillcolor="rgba(37,99,235,0.12)",
         name="Rolling Sharpe",
         hovertemplate="%{y:.3f}<extra>63d Sharpe</extra>",
     ))
