@@ -2065,6 +2065,27 @@ def render_monte_carlo() -> None:
 # ===========================================================================
 
 # Canonical scenario definitions — mirrors monte_carlo_engine.run_standard_stress_suite
+_HISTORICAL_SCENARIOS = {
+    "COVID Crash": (
+        "2020-02-15",
+        "2020-03-31",
+    ),
+
+    "Financial Crisis": (
+        "2008-09-01",
+        "2009-03-31",
+    ),
+
+    "Inflation Shock": (
+        "2022-01-01",
+        "2022-12-31",
+    ),
+
+    "AI Bull Market": (
+        "2023-01-01",
+        "2024-12-31",
+    ),
+}
 _STRESS_SCENARIOS: list[dict] = [
     {
         "label":          "Baseline",
