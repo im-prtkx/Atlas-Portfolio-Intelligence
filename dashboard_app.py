@@ -1389,9 +1389,9 @@ def chart_mc_paths(
 
     # Percentile fan
     pct_specs = [
-        (5,  95, f"{GREEN}30"),
-        (10, 90, f"{COBALT}20"),
-        (25, 75, f"{COBALT}15"),
+        (5, 95,  "rgba(16,185,129,0.18)"),
+        (10, 90, "rgba(37,99,235,0.12)"),
+        (25, 75, "rgba(37,99,235,0.08)"),
     ]
     for lo, hi, fill_color in pct_specs:
         lo_vals = np.percentile(paths, lo, axis=0)
