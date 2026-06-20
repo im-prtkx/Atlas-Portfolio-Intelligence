@@ -27,6 +27,13 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 from scipy.optimize import minimize
+from regime_engine import (
+    MarketRegime,
+    RegimeResult,
+    detect_market_regime,
+    regime_color,
+    regime_description,
+)
 
 # ---------------------------------------------------------------------------
 # Logging
