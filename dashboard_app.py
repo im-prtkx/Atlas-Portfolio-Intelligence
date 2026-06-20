@@ -2491,6 +2491,8 @@ def main() -> None:
         render_monte_carlo()
     elif page == "Stress Testing":
         render_stress_testing()
+    elif page == "Regime Intelligence":
+        render_regime_intelligence()
     else:
         st.error(f"Unknown page: {page}")
 
