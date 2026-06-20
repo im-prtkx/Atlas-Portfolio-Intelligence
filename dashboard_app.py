@@ -784,17 +784,17 @@ def render_sidebar() -> None:
         simulation_pages = [
             ("📈", "Backtesting"),
             ("🎲", "Monte Carlo"),
-            ("🌩", "Stress Testing"),
+            ("⚡", "Stress Testing"),
         ]
 
         for icon, page in simulation_pages:
-             if st.button(
-                f"{icon}  {page}",
+            if st.button(
+                f"{icon} {page}",
                 key=f"nav_{page}",
                 use_container_width=True,
-        ):
-            st.session_state.page = page
-            st.rerun()
+            ):
+                st.session_state.page = page
+                st.rerun()
 
         st.markdown(
             f'<div class="ql-section-header" style="margin-top:16px;">Intelligence</div>',
@@ -802,12 +802,12 @@ def render_sidebar() -> None:
         )
 
         intelligence_pages = [
-                ("🧭", "Regime Intelligence"),
+            ("🧭", "Regime Intelligence"),
         ]
 
         for icon, page in intelligence_pages:
             if st.button(
-                f"{icon}  {page}",
+                f"{icon} {page}",
                 key=f"nav_{page}",
                 use_container_width=True,
             ):
