@@ -2568,7 +2568,7 @@ def render_regime_intelligence() -> None:
 
     # ── Explanation ───────────────────────────────────────────────────────────
     section_header("Explanation")
-    alert(result.explanation, "info")
+    alert(regime_description(result.regime), "info")
 
     # ── Evidence ──────────────────────────────────────────────────────────────
     section_header("Evidence")
