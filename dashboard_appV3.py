@@ -1,7 +1,7 @@
 """
 dashboard_app.py
 ================
-QuantLab — Institutional Portfolio Research & Risk Analytics Platform
+Atlas Portfolio Intelligence — Institutional Portfolio Research & Risk Analytics Platform
 ---------------------------------------------------------------------
 Streamlit dashboard providing three core research surfaces:
 
