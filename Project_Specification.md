@@ -1,4 +1,4 @@
-# QuantLab
+# Atlas Portfolio Intelligence
 
 ## Objective
 
