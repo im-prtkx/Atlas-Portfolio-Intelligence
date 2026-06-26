@@ -1,4 +1,4 @@
-# QuantLab Roadmap
+# Atlas Portfolio Intelligence
 
 Phase 1
 - Data Collection
